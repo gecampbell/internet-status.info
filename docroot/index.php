@@ -45,53 +45,7 @@ else {
   <link href="http://fonts.googleapis.com/css?family=Special+Elite"
         rel="stylesheet" type="text/css">
   <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-  <style>
-  /* Sticky footer styles
-  -------------------------------------------------- */
-
-  html,
-  body {
-	height: 100%;
-	/* The html and body elements cannot have any padding or margin. */
-  }
-
-  /* Wrapper for page content to push down footer */
-  #wrap {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	/* Negative indent footer by it's height */
-	margin: 0 auto -60px;
-  }
-
-  /* Set the fixed height of the footer here */
-  #push,
-  footer {
-	height: 60px;
-  }
-  footer {
-  text-align: center;
-  font-size: small;
-  }
-
-  /* Lastly, apply responsive CSS fixes as necessary */
-  @media (max-width: 767px) {
-	footer {
-	  margin-left: -20px;
-	  margin-right: -20px;
-	  padding-left: 20px;
-	  padding-right: 20px;
-	}
-  }
-
-  #big {
-  	color: black;
-	font-family: "Special Elite", "Courier New", "Courier", Mono;
-  	font-size: 120pt;
-  	line-height: 300pt;
-	letter-spacing: -4pt;
-  }
-  </style>
+  <link href="/css/site.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<div id="wrap">
@@ -102,19 +56,7 @@ else {
 		</div>
 		<div id="push"></div>
 	</div>
-	<footer>
-		<div class="container">
-			&copy;<?php echo date('Y');?>
-			<a href="http://glen-campbell.com">Glen Campbell</a>
-		</div>
-	</footer>
+<?php include 'footer.inc';?>
 </body>
 </html>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-38736191-3', 'internet-status.info');
-  ga('send', 'pageview');
-</script>
+<?php include 'ga.inc';?>

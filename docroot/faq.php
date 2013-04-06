@@ -37,6 +37,13 @@
 	You can check out the
 	<a href="http://x.internet-status.info">experimental
 	version of the site</a> for new features as they are added.</p>
+	<h3>Is this an open-source project?</h3>
+	<p>Yes. The source code is
+	<a href="https://github.com/gecampbell/internet-status.info">available
+	on Github</a>.</p>
+	<h3>Will you accept pull requests?</h3>
+	<p>Gladly. They may be subjected to a very high level of peer review
+	and analysis, however, given the strategic nature of the Internet.</p>
     <hr>
     <p><small><a href="/">Home</a></small></p>
     </div>

@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+header('Cache-Control: no-cache');
+?><!DOCTYPE html>
 <html>
 <head>
   <title>Is the Internet Still Up?</title>

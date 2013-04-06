@@ -6,6 +6,7 @@ header('Cache-Control: no-cache');
   <title>Is the Internet Still Up?</title>
   <meta name="keywords" content="internet,status,uptime">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
   <style>
   /* Sticky footer styles
@@ -33,11 +34,12 @@ header('Cache-Control: no-cache');
   }
   footer {
   text-align: center;
+  font-size: small;
   }
 
   /* Lastly, apply responsive CSS fixes as necessary */
   @media (max-width: 767px) {
-	#footer {
+	footer {
 	  margin-left: -20px;
 	  margin-right: -20px;
 	  padding-left: 20px;
@@ -46,7 +48,7 @@ header('Cache-Control: no-cache');
   }
   #big {
   	color: black;
-  	font-weight: bold;
+	font-family: "Special Elite", "Courier New", "Courier", Mono;
   	font-size: 120pt;
   	line-height: 300pt;
 	letter-spacing: -4pt;

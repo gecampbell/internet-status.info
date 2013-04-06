@@ -6,7 +6,7 @@ header('Cache-Control: no-cache');
   <title>Is the Internet Still Up?</title>
   <meta name="keywords" content="internet,status,uptime">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
   <style>
   /* Sticky footer styles
   -------------------------------------------------- */

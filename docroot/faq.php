@@ -21,7 +21,7 @@
     <p>So I'd know if the Internet was up.</p>
 
     <h3>How does it verify that the Internet is up?</h3>
-    <p>By using HTTP over TCP/IP.</p>
+    <p>By using HTTP over TCP/IP. Also, HTML.</p>
 
     <h3>Can I donate to this project?</h3>
     <p>The thanks of a grateful world is all I need.</p>

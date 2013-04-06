@@ -34,6 +34,8 @@ if (isset($TRANS[$lang])) {
 else {
     $title = 'Is the Internet still up?';
     $yes = 'yes';
+    if (strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,5)) == 'en-gb')
+        $yes = 'quite';
 }
 ?><!DOCTYPE html>
 <html>

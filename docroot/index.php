@@ -54,13 +54,34 @@
 <body>
 	<div id="wrap">
 		<div class="container">
-			<center id="big">Yes</center>
+			<center id="big">
+			<?php
+			$lang = substr(strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']),0,2);
+			switch($lang) {
+			case 'de':
+				$yes = 'Ja';
+				break;
+			case 'es':
+				$yes = 'Si';
+				break;
+			case 'fr':
+				$yes = 'Oui';
+				break;
+			default:
+				$fp = fopen('/tmp/languages.txt','a');
+				fprintf($fp, "%s\n", $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+				fclose($fp);
+				$yes = 'Yes';
+			}
+			echo "$yes\n";
+			?>
+			</center>
 		</div>
 		<div id="push"></div>
 	</div>
 	<footer>
 		<div class="container">
-			&copy;2013
+			&copy;<?php echo date('Y');?>
 			<a href="http://glen-campbell.com">Glen Campbell</a>
 		</div>
 	</footer>

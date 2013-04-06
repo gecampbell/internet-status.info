@@ -32,6 +32,11 @@
     <p>Technically, it only verifies the portion of the Internet that
     is visible to you. But, really, that's the only part that counts,
     right?</p>
+	<h3>Do you ever add new features?</h3>
+	<p>Of course; what software developer doesn't allow feature creep?
+	You can check out the
+	<a href="http://x.internet-status.info">experimental
+	version of the site</a> for new features as they are added.</p>
     <hr>
     <p><small><a href="/">Home</a></small></p>
     </div>

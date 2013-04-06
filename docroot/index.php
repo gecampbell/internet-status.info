@@ -1,13 +1,33 @@
 <?php
 header('Cache-Control: no-cache');
+$TRANS = array(
+    'da' => 'ja',
+    'de' => 'ja',
+    'eo' => 'jes',
+    'es' => 'sí',
+    'fi' => 'kyllä',
+    'fr' => 'oui',
+    'ko' => '예',
+    'no' => 'ja',
+    'ru' => 'да',
+    'sv' => 'ja',
+    'zh' => '是'
+);
+$lang = substr(strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']),0,2);
+if (isset($TRANS[$lang]))
+    $yes = $TRANS[$lang];
+else
+    $yes = 'yes';
 ?><!DOCTYPE html>
 <html>
 <head>
   <title>Is the Internet Still Up?</title>
+  <meta charset="utf8">
   <meta name="keywords" content="internet,status,uptime">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="http://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
-  <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Special+Elite"
+        rel="stylesheet" type="text/css">
+  <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
   <style>
   /* Sticky footer styles
   -------------------------------------------------- */
@@ -46,6 +66,7 @@ header('Cache-Control: no-cache');
 	  padding-right: 20px;
 	}
   }
+
   #big {
   	color: black;
 	font-family: "Special Elite", "Courier New", "Courier", Mono;
@@ -59,26 +80,7 @@ header('Cache-Control: no-cache');
 	<div id="wrap">
 		<div class="container">
 			<center id="big">
-			<?php
-			$lang = substr(strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']),0,2);
-			switch($lang) {
-			case 'de':
-				$yes = 'Ja';
-				break;
-			case 'es':
-				$yes = 'Si';
-				break;
-			case 'fr':
-				$yes = 'Oui';
-				break;
-			default:
-				$fp = fopen('/tmp/languages.txt','a');
-				fprintf($fp, "%s\n", $_SERVER['HTTP_ACCEPT_LANGUAGE']);
-				fclose($fp);
-				$yes = 'Yes';
-			}
-			echo "$yes\n";
-			?>
+			<?php echo "$yes\n"?>
 			</center>
 		</div>
 		<div id="push"></div>

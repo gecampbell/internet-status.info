@@ -45,8 +45,8 @@ else {
   <meta name="keywords" content="internet,status,uptime">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="120" >
-  <link href="http://fonts.googleapis.com/css?family=Special+Elite"
-        rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Unkempt:400,700'
+		rel='stylesheet' type='text/css'>
   <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
   <link href="/css/site.css" type="text/css" rel="stylesheet">
 </head>

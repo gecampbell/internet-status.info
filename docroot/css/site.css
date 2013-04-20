@@ -22,6 +22,7 @@ footer {
 height: 60px;
 }
 footer {
+font-family: Unkempt, Helvetica, Arial, Sans-Serif;
 text-align: center;
 font-size: small;
 }
@@ -40,8 +41,9 @@ max-width: 600px;
 }
 #big {
 color: black;
-font-family: "Special Elite", "Courier New", "Courier", Mono;
+font-family: "Unkempt", "Courier New", "Courier", Mono;
 font-size: 120pt;
+font-weight: bold;
 line-height: 300pt;
 letter-spacing: -4pt;
 }

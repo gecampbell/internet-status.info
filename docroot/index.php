@@ -45,20 +45,10 @@ else {
   <meta name="keywords" content="internet,status,uptime">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="120" >
-  <link href='http://fonts.googleapis.com/css?family=Unkempt:400,700'
-		rel='stylesheet' type='text/css'>
-  <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-  <link href="/css/site.css" type="text/css" rel="stylesheet">
+<?php include('css.inc');?>
 </head>
 <body>
-	<div id="wrap">
-		<div class="container">
-			<center id="big">
-			<?php echo "$yes\n"?>
-			</center>
-		</div>
-		<div id="push"></div>
-	</div>
+<h1><?php echo "$yes\n"?></h1>
 <?php include 'footer.inc';?>
 </body>
 </html>

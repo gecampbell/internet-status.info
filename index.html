@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!-- Copyright(c)2014 Glen Campbell -->
+<head>
+<title>Is the Internet up?</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="xlerb is not a word">
+<meta name="author" content="Glen Campbell <glen@xlerb.com>">
+<style>
+html {
+background: white;
+margin: 0;
+padding: 0;
+line-height: 100%;
+font-family: "helvetica neue", helvetica, sans-serif;
+}
+#answer {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+position: absolute;
+bottom: 40%;
+color: black;
+font-size: 24pt;
+font-size: 20vw;
+font-weight: bold;
+line-height: 20vw;
+letter-spacing: -1vw;
+text-align: center;
+text-transform: uppercase;
+}
+footer {
+width: 100%;
+font-size: 10pt;
+text-align: center;
+color: silver;
+position: absolute;
+bottom: 0;
+left: 0;
+margin: 0 auto 10px auto;
+}
+a {
+color: gray;
+text-decoration: none;
+}
+a:hover {
+color: silver;
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div id="answer">Yes</div>
+
+<footer>
+&copy;2014 <a href="http://www.glencampbell.co">Glen Campbell</a>
+</footer>
+
+</body>
+</html>
+<script type="text/javascript">
+var titles = {
+    "da": "Er internettet stadig oppe?",
+    "de": "Ist das Internet noch auf?",
+    "eo": "Ĉu la Interreto ankoraŭ kolektis?",
+    "es": "¿Es Internet todavía pasa?",
+    "fi": "Onko Internetin yhä ylöspäin?",
+    "fr": "Internet est-il toujours en place?",
+    "ko": "인터넷은 아직도입니까?",
+    "no": "Er Internett fortsatt opp?",
+    "ru": "Является ли Интернет еще до?",
+    "sv": "Är Internet fortfarande upp?",
+    "zh": "互联网还没睡？"
+}
+var translations = {
+    "da": "ja",
+    "de": "ja",
+    "eo": "jes",
+    "es": "sí",
+    "fi": "kyllä",
+    "fr": "oui",
+    "ko": "예",
+    "no": "ja",
+    "ru": "да",
+    "sv": "ja",
+    "zh": "是"
+}
+var langs=navigator.language.split("-");
+var lang=langs[0];
+document.title=document.title+" ("+lang+")";
+if (titles[lang]) {
+    document.title=titles[lang];
+    document.getElementById("answer").innerHTML=translations[lang];
+}
+</script>

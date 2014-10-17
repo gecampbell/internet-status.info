@@ -29,7 +29,6 @@ font-weight: bold;
 line-height: 20vw;
 letter-spacing: -1vw;
 text-align: center;
-text-transform: uppercase;
 }
 footer {
 width: 100%;
@@ -94,5 +93,8 @@ document.title=document.title+" ("+lang+")";
 if (titles[lang]) {
     document.title=titles[lang];
     document.getElementById("answer").innerHTML=translations[lang];
+}
+if (navigator.language == "en-gb") {
+    document.getElementById("answer").innerHTML="Quite";
 }
 </script>

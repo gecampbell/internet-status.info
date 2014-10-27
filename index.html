@@ -2,7 +2,7 @@
 <html>
 <!-- Copyright(c)2014 Glen Campbell -->
 <head>
-<title>Is the Internet up?</title>
+<title>Is the Internet still up?</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,15 @@ background: white;
 margin: 0;
 padding: 0;
 line-height: 100%;
-font-family: "helvetica neue", helvetica, sans-serif;
+font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+#question {
+text-align: center;
+font-size: 10pt;
+font-size: .9vw;
+color: gray;
+font-style: italic;
+padding: 1em;
 }
 #answer {
 width: 100%;
@@ -51,7 +59,7 @@ text-decoration: underline;
 </style>
 </head>
 <body>
-
+<div id="question">Is the Internet still up?</div>
 <div id="answer">Yes</div>
 
 <footer>
@@ -93,6 +101,7 @@ document.title=document.title+" ("+lang+")";
 if (titles[lang]) {
     document.title=titles[lang];
     document.getElementById("answer").innerHTML=translations[lang];
+    document.getElementById("question").innerHTML=titles[lang];
 }
 if (navigator.language == "en-gb") {
     document.getElementById("answer").innerHTML="Quite";

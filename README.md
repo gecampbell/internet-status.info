@@ -1,7 +1,7 @@
 http://internet-status.info
 ===========================
 
-&copy;2013 Glen Campbell
+&copy;2013-15 Glen Campbell
 
 ### Can I submit pull requests?
 

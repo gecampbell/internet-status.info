@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd site
+
 #
 # This is actually crucial to the functioning of the site. Use of the
 # Cache-Control: no-cache header ensures (supposedly) that the page
